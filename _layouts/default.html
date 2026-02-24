@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
+    </title>
+
+    <link rel="stylesheet" href="{{ "/assets/css/site.css" | relative_url }}" />
+
+    {% seo %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-row">
+            <a class="brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+
+            <nav class="nav">
+                <a href="{{ "/" | relative_url }}" class="{% if page.url == " /" %}active{% endif %}">Home</a>
+                <a href="{{ "/projects" | relative_url }}" class="{% if page.url contains " /projects" %}active{% endif %}">Projects</a>
+                <a href="{{ "/about" | relative_url }}" class="{% if page.url contains " /about" %}active{% endif %}">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <span>© {{ "now" | date: "%Y" }} {{ site.title }}</span>
+            <span class="muted">
+                <a href="https://github.com/Petrica81">GitHub</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

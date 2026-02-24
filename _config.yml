@@ -1,3 +1,6 @@
-theme: jekyll-theme-minimal
-title: Homepage
-description: Bookmark this to keep an eye on my project updates!
+﻿title: "Petrica — Portfolio"
+description: "Game dev portfolio: projects, experiments, and demos."
+lang: en
+
+plugins:
+  - jekyll-seo-tag

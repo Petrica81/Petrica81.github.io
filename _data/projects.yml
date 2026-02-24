@@ -1,0 +1,7 @@
+- name: "Prototype: Movement & Combat"
+  description: "Third-person prototype focused on movement feel and combat loops."
+  year: 2026
+  featured: true
+  repo: "https://github.com/Petrica81/REPO_NAME"
+  live: ""
+  tags: ["Unity", "C#", "Gameplay"]
