@@ -3,9 +3,10 @@
     "",
     "\\assets",
     "\\assets\\css",
+    "\\assets\\img",
     "\\_data",
-    "\\_layouts"
+    "\\_layouts",
+    "\\_projects"
   ],
-  "SelectedNode": "\\_layouts\\default.html",
   "PreviewInSolutionExplorer": false
 }

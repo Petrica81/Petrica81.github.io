@@ -4,3 +4,8 @@ lang: en
 
 plugins:
   - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/

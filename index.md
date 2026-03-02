@@ -21,7 +21,7 @@ title: Home
 <p class="muted">A few projects I consider the most representative.</p>
 
 <div class="grid">
-{% assign featured = site.data.projects | where: "featured", true %}
+{% assign featured = site.projects | where: "featured", true %}
 {% for p in featured %}
   <article class="card">
     <div class="title-row">

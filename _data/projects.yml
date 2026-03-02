@@ -1,7 +1,9 @@
-- name: "Prototype: Movement & Combat"
-  description: "Third-person prototype focused on movement feel and combat loops."
-  year: 2026
-  featured: true
-  repo: "https://github.com/Petrica81/REPO_NAME"
+- name: "Life on a Tire"
+  description: 'Fun platformer game created for Jame Gam #37.'
+  year: 2024
+  featured: false
+  repo: "https://github.com/Petrica81/Life_on_a_Tire"
   live: ""
-  tags: ["Unity", "C#", "Gameplay"]
+  itch: "https://vlandero.itch.io/life-on-a-tire"
+  image: "/assets/img/life_on_a_tire.png"
+  tags: ["Unity", "C#", "Platformer", "Hard"]

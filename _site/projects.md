@@ -4,28 +4,40 @@ title: Projects
 ---
 
 <h1>Projects</h1>
-<p class="muted">Repositories, demos, and experiments.</p>
+<p class="muted">Click a card to open the project page.</p>
 
 <div class="grid">
-{% for p in site.data.projects %}
-  <article class="card">
-    <div class="title-row">
-      <h3>{{ p.name }}</h3>
-      {% if p.year %}<div class="small">{{ p.year }}</div>{% endif %}
-    </div>
+{% assign items = site.projects | sort: "year" | reverse %}
+{% for p in items %}
+  <a class="card-link" href="{{ p.url | relative_url }}">
+    <article class="card project">
+      <div class="content">
+        <div class="title-row">
+          <h3>{{ p.title }}</h3>
+          {% if p.year %}<div class="small">{{ p.year }}</div>{% endif %}
+        </div>
 
-    <p>{{ p.description }}</p>
+        {% if p.description %}<p>{{ p.description }}</p>{% endif %}
 
-    {% if p.tags and p.tags.size > 0 %}
-    <div class="tags">
-      {% for t in p.tags %}<span class="tag">{{ t }}</span>{% endfor %}
-    </div>
-    {% endif %}
+        {% if p.tags and p.tags.size > 0 %}
+        <div class="tags">
+          {% for t in p.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+        </div>
+        {% endif %}
 
-    <div class="actions">
-      {% if p.live and p.live != "" %}<a class="btn" href="{{ p.live }}">Live demo</a>{% endif %}
-      {% if p.repo and p.repo != "" %}<a class="btn" href="{{ p.repo }}">GitHub repo</a>{% endif %}
-    </div>
-  </article>
+        <div class="actions">
+          {% if p.live and p.live != "" %}<span class="btn">Live demo</span>{% endif %}
+          {% if p.itch and p.itch != "" %}<span class="btn itch">Itch.io</span>{% endif %}
+          {% if p.repo and p.repo != "" %}<span class="btn">GitHub repo</span>{% endif %}
+        </div>
+      </div>
+
+      {% if p.image and p.image != "" %}
+      <div class="thumb">
+        <img src="{{ p.image | relative_url }}" alt="{{ p.title }} thumbnail" loading="lazy" />
+      </div>
+      {% endif %}
+    </article>
+  </a>
 {% endfor %}
 </div>

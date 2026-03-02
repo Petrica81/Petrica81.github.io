@@ -1,0 +1,37 @@
+﻿---
+layout: default
+---
+<article class="project-page">
+    <div class="project-hero">
+        <div class="project-meta">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}<p class="muted">{{ page.description }}</p>{% endif %}
+
+            <div class="actions" style="margin-top: 0.8rem;">
+                {% if page.live and page.live != "" %}<a class="btn" href="{{ page.live }}">Live demo</a>{% endif %}
+                {% if page.itch and page.itch != "" %}<a class="btn itch" href="{{ page.itch }}">Itch.io</a>{% endif %}
+                {% if page.repo and page.repo != "" %}<a class="btn" href="{{ page.repo }}">GitHub repo</a>{% endif %}
+            </div>
+
+            {% if page.tags and page.tags.size > 0 %}
+            <div class="tags" style="margin-top: 0.8rem;">
+                {% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+        {% if page.image and page.image != "" %}
+        <div class="project-thumb">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }} cover" />
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="project-content">
+        {{ content }}
+    </div>
+
+    <p style="margin-top: 1.2rem;">
+        <a class="btn" href="{{ "/projects" | relative_url }}">← Back to Projects</a>
+    </p>
+</article>

@@ -1,4 +1,4 @@
-/* ====== Dark mode default (clean + cinematic) ====== */
+﻿/* ====== Dark mode default (clean + cinematic) ====== */
 :root {
     color-scheme: dark;
     --bg: #0b0f16;
@@ -238,3 +238,107 @@ a {
     font-size: 0.9rem;
     color: var(--muted);
 }
+
+.card.project {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+    .card.project .content {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .card.project .thumb {
+        flex: 0 0 220px;
+        width: 220px;
+        border-radius: calc(var(--radius) - 6px);
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.04);
+        overflow: hidden;
+    }
+
+        .card.project .thumb img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+@media (max-width: 760px) {
+    .card.project {
+        flex-direction: column;
+    }
+
+        .card.project .thumb {
+            width: 100%;
+            flex-basis: auto;
+            aspect-ratio: 16 / 9;
+        }
+}
+
+/* Clickable card */
+.card-link {
+    display: contents;
+}
+
+.card.project {
+    cursor: pointer;
+}
+
+    .card.project:hover {
+        background: rgba(255,255,255,0.08);
+    }
+
+/* Project page layout */
+.project-hero {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 1rem;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) + 6px);
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+    box-shadow: var(--shadow);
+}
+
+.project-thumb {
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    background: rgba(255,255,255,0.04);
+}
+
+    .project-thumb img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+.project-content {
+    line-height: 1.65;
+    color: var(--text);
+}
+
+    .project-content h2, .project-content h3 {
+        margin-top: 1.4rem;
+    }
+
+@media (max-width: 900px) {
+    .project-hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Itch button accent (optional) */
+.btn.itch {
+    background: rgba(255,80,80,0.12);
+    border-color: rgba(255,80,80,0.22);
+}
+
+    .btn.itch:hover {
+        background: rgba(255,80,80,0.18);
+    }
