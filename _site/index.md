@@ -19,7 +19,6 @@ title: Home
 
 <h2>Featured</h2>
 <p class="muted">A few projects I consider the most representative.</p>
-
 <div class="grid">
 {% assign featured = site.projects | where: "featured", true %}
 {% for p in featured %}

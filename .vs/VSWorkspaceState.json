@@ -4,9 +4,13 @@
     "\\assets",
     "\\assets\\css",
     "\\assets\\img",
-    "\\_data",
-    "\\_layouts",
-    "\\_projects"
+    "\\_projects",
+    "\\_site",
+    "\\_site\\assets",
+    "\\_site\\assets\\css",
+    "\\_site\\assets\\img",
+    "\\_site\\projects"
   ],
+  "SelectedNode": "\\assets\\img\\life_on_a_tire.png",
   "PreviewInSolutionExplorer": false
 }
