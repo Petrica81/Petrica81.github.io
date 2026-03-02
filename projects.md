@@ -5,7 +5,9 @@ title: Projects
 
 <h1>Projects</h1>
 <p class="muted">Click a card to open the project page.</p>
-
+<h2 class="muted">
+  I'm actively adding past and current projects — check back soon for more updates.
+</h2>
 <div class="grid">
 {% assign items = site.projects | sort: "year" | reverse %}
 {% for p in items %}

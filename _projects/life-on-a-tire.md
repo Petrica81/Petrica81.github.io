@@ -6,7 +6,7 @@ year: 2024
 featured: false
 repo: "https://github.com/Petrica81/Life_on_a_Tire"
 itch: "https://vlandero.itch.io/life-on-a-tire"
-image: "/assets/img/life_on_a_tire.png"
+image: "/assets/img/life-on-a-tire.png"
 tags: ["Unity", "C#", "Platformer", "Hard"]
 ---
 

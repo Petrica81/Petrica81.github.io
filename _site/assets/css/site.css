@@ -342,3 +342,11 @@ a {
     .btn.itch:hover {
         background: rgba(255,80,80,0.18);
     }
+
+.card.project:hover .thumb img {
+    transform: scale(1.04);
+}
+
+.card.project .thumb img {
+    transition: transform 180ms ease;
+}
