@@ -2,7 +2,7 @@
 layout: project
 title: "Become What They Fear"
 description: "A GameBoy-style adventure game about possession, fear mechanics, and strategic scaring."
-year: 2025
+year: "2024-09"
 featured: true
 repo: "https://github.com/Petrica81/Become-What-They-Fear"
 live: ""

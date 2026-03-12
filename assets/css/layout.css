@@ -1,0 +1,71 @@
+.container {
+    width: min(var(--max), calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+/* ====== Header ====== */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    background: rgba(11,15,22,0.55);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 0;
+    gap: 1rem;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.nav {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+}
+
+    .nav a {
+        padding: 0.35rem 0.6rem;
+        border-radius: 10px;
+        color: var(--muted);
+        border: 1px solid transparent;
+    }
+
+        .nav a.active,
+        .nav a:hover {
+            color: var(--text);
+            background: rgba(255,255,255,0.06);
+            border-color: var(--border);
+            text-decoration: none;
+        }
+
+/* ====== Footer ====== */
+.site-footer {
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+    background: rgba(11,15,22,0.35);
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    gap: 1rem;
+}
+
+/* ====== Grid ====== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 1000px;
+    margin: 0 auto;
+}

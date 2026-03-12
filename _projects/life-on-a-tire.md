@@ -2,7 +2,7 @@
 layout: project
 title: "Life on a Tire"
 description: "Fun platformer game created for Jame Gam #37."
-year: 2024
+year: "2024-03"
 featured: false
 repo: "https://github.com/Petrica81/Life_on_a_Tire"
 itch: "https://vlandero.itch.io/life-on-a-tire"

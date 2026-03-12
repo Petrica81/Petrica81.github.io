@@ -1,0 +1,131 @@
+/* ====== Hero ====== */
+.hero {
+    margin: 1.4rem 0 1.2rem;
+    padding: 1.4rem;
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) + 6px);
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+    box-shadow: var(--shadow);
+}
+
+    .hero .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: rgba(255,255,255,0.04);
+        color: var(--muted);
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        margin: 0.9rem 0 0.4rem;
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: -0.6px;
+    }
+
+    .hero p {
+        margin: 0.4rem 0 1rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.55;
+        max-width: 70ch;
+    }
+
+    .hero .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin-top: 0.8rem;
+    }
+
+/* ====== Project cards ====== */
+.project {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.card.project .content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.card.project .thumb {
+    flex: 0 0 220px;
+    width: 220px;
+    border-radius: calc(var(--radius) - 6px);
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.04);
+    overflow: hidden;
+}
+
+    .card.project .thumb img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+/* ====== Project page layout ====== */
+.project-hero {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 1rem;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) + 6px);
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+    box-shadow: var(--shadow);
+}
+
+.project-thumb {
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    background: rgba(255,255,255,0.04);
+}
+
+    .project-thumb img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+.project-content {
+    line-height: 1.65;
+    color: var(--text);
+}
+
+    .project-content h2,
+    .project-content h3 {
+        margin-top: 1.4rem;
+    }
+
+/* ====== Responsive ====== */
+@media (max-width: 760px) {
+
+    .card {
+        grid-column: span 12;
+    }
+
+        .card.project {
+            flex-direction: column;
+        }
+
+            .card.project .thumb {
+                width: 100%;
+                flex-basis: auto;
+                aspect-ratio: 16 / 9;
+            }
+}
+
+@media (max-width: 900px) {
+    .project-hero {
+        grid-template-columns: 1fr;
+    }
+}

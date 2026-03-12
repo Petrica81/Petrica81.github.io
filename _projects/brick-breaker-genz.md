@@ -2,7 +2,7 @@
 layout: project
 title: "Brick Breaker GenZ"
 description: "A 48-hour Unity 3D game jam project reimagining the classic brick breaker in a fully 3D space."
-year: 2024
+year: "2024-04"
 featured: true
 repo: "https://github.com/Petrica81/Brick-Breaker-GenZ"
 live: ""

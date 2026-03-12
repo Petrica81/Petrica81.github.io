@@ -5,12 +5,8 @@
     "\\assets\\css",
     "\\assets\\img",
     "\\_layouts",
-    "\\_projects",
-    "\\_site\\assets",
-    "\\_site\\assets\\css",
-    "\\_site\\assets\\img",
-    "\\_site\\projects"
+    "\\_projects"
   ],
-  "SelectedNode": "\\projects.md",
+  "SelectedNode": "\\assets\\css\\pages.css",
   "PreviewInSolutionExplorer": false
 }
